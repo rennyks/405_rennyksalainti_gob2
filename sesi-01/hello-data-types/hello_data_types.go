@@ -22,4 +22,10 @@ func main() {
 	var condition bool = true
 	fmt.Printf("is it premitted? %t \n", condition)
 	fmt.Println("===============================")	
+
+	//string
+	var message string = "hallo renny"
+	fmt.Print(message)
+	fmt.Println("\n==========================")
+	
 }
