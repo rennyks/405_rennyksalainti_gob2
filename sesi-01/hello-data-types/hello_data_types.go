@@ -3,7 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	//number (integer) tipe data Integer
+	//default tipe data
+	// var first = 89
+	// var second = -12
+
+
+	//inialisasi tipe data
 	var first uint8 = 89
 	var second int8 = -12
 
@@ -11,14 +16,14 @@ func main() {
 	fmt.Printf("bilangan second : %T\n", second)
 	fmt.Println("===============================")
 
-	//belajar number(float)
+	//tipe data float
 	var decimalNumber float32 = 3.63
 
 	fmt.Printf("decimal Number : %f\n", decimalNumber)
 	fmt.Printf("decimal Number : %.3f\n", decimalNumber)
 	fmt.Println("===============================")
 
-	//belajar Bool
+	//tipe data boolean
 	var condition bool = true
 	fmt.Printf("is it premitted? %t \n", condition)
 	fmt.Println("===============================")	
@@ -27,5 +32,10 @@ func main() {
 	var message string = "hallo renny"
 	fmt.Print(message)
 	fmt.Println("\n==========================")
+
+	/* deklarasi string juga bisa dengan tanda grave accent/backticks (``) dengan 
+	menggunakan backtics akan membuat semua karakter didalamnya tidak diescape*/
+	var send_message = `Selamat datang di hactiv8. Salam kenal :).Mari belajar "scalable web service with go."`
+	fmt.Printf(send_message)
 	
 }
