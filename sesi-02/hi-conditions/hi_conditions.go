@@ -1,17 +1,17 @@
 package main
 
-import "fmt"
-
 func main() {
-	var currentYear = 2021
+	// temporary variabel
+	// var currentYear = 2021
 	
-	if age := currentYear - 2001; age < 17 {
-		fmt.Println("Kamu belum boleh membuat kartu sim")
-	} else {
-		fmt.Println("Kamu sudah boleh membuat kartu sim")
-	}
+	// if age := currentYear - 2001; age < 17 {
+	// 	fmt.Println("Kamu belum boleh membuat kartu sim")
+	// } else {
+	// 	fmt.Println("Kamu sudah boleh membuat kartu sim")
+	// }
 
-	// var score = 10
+	//switch
+	//
 	// switch score {
 	// case 8:
 	// fmt.Println("Perfect")
@@ -21,10 +21,17 @@ func main() {
 	// fmt.Println("not bad")
 	// }
 
-	// var score = 6
+	//switch with relational operators
 
 	// switch{
-	// 	case score
-	//}
+	// case score == 8:
+	// 	fmt.Println("perfect")
+	// case (score < 8) && (score > 3):
+	// 	fmt.Println("not bad")
+	// default:{
+	// 	fmt.Println("study harder")
+	// 	fmt.Println("you need to learn more")
+	// }
+	// }
 }
 
