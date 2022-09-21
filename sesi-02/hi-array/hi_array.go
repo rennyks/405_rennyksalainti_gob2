@@ -9,5 +9,5 @@ func main() {
 	var strings = [3]string{"Airell", "Nanda", "Mailo"}
 
 	fmt.Printf("%#v\n", numbers)
-	fmt.Printf("%#v\n", strings)
+	fmt.Printf("%#v\n", strings) 
 }
