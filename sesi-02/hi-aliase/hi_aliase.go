@@ -16,4 +16,11 @@ func main() {
 	var hour second = 3600
 
 	fmt.Printf("hour type : %T\n", hour) // => hour type: uint
+
+	//mendeklarasikan tipe data alias bernama second
+	//type nama_alias = nama_tipe_data
+	type third = uint
+
+	var jam third = 3600
+	fmt.Printf("hour type: %T\n", jam) //=> hour type : uint
 }
