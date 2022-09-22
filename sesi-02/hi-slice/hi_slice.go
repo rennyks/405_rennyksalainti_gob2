@@ -1,12 +1,12 @@
 package main
 
-import "fmt"
-
 func main() {
+	var fruits = []string{"apple", "banana", "mango"}
+	_ = fruits
 
-	var fruits = make([]string, 3)
+	// var fruits = make([]string, 3)
 
-	_= fruits
+	// _= fruits
 
-	fmt.Printf("%#v", fruits)
+	// fmt.Printf("%#v", fruits)
 }
