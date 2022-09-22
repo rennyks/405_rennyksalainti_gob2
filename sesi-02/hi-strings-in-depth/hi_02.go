@@ -16,4 +16,6 @@ func main(){
 	//menggunakan function RuneCountlnString dari package utf8
 	fmt.Printf("str1 character length => %d\n", utf8.RuneCountInString(str1))
 	fmt.Printf("str2 character length => %d\n", utf8.RuneCountInString(str2))
+
+	
 }
