@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
-
+func main(){
 	//slicing
 	var fruits1 = []string{"apple", "banana", "mango", "durian", "pineapple"}
 	

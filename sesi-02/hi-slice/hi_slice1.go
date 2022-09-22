@@ -2,37 +2,30 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 
 func main()	{
-	//cap function
+	//sppend function
 
-	var fruits1 = []string{"apple", "mango", "durian", "banana"}
+	var fruits = make([]string, 3)
+	_ = fruits
 
-	fmt.Println("Fruits1 cap : ", cap(fruits1))//4
-	fmt.Println("Fruits1 len : ", len(fruits1))//4
+	fruits[0] = "apple"
+	fruits[1] = "banana"
+	fruits[2] = "mango"
 
-	fmt.Println(strings.Repeat("#", 20))
+	fmt.Printf("%#v", fruits)
 
-	var fruits2 = fruits1[0:3]
+	fruits = append(fruits, "apple", "banana", "mango")
+	fmt.Printf("%#v", fruits)
 
-	fmt.Println("Fruits1 cap : ", cap(fruits2))//4
-	fmt.Println("Fruits1 len : ", len(fruits2))//3
+	//append function with ellipsis
+	var fruits1 = []string{"apple", "banana", "mango"}
+	var fruits2 = []string{"durian", "pineapple", "starfruit"}
 
-	fmt.Println(strings.Repeat("#", 20))
+	fruits1 = append(fruits1, fruits2...)
+	fmt.Printf("%#v", fruits1)
 
-	var fruits3 = fruits1[1:]
-	fmt.Println("Fruits1 cap : ", cap(fruits3))//3
-	fmt.Println("Fruits1 len : ", len(fruits3))//3
 
-	//Creating a new backing array
-	cars := []string{"ford", "honda", "audi", "range rover"}
-	newCars := []string{}
-	newCars = append(newCars,cars[0:2]...)
-
-	cars[0] = "nisan"
-	fmt.Println("cars :", cars)
-	fmt.Println("newCars:", newCars)
 }
