@@ -1,6 +1,7 @@
 Nomor peserta : 149368582100-405 
 Nama : Renny Kristina Salainti
 
+19/09/22
 A. Introduction
 
 >> Go Programming Introduction
