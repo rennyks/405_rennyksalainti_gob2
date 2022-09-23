@@ -7,8 +7,10 @@ import (
 
 func main() {
 
-	var studentLists = []string{"airel", "nanda",}
+	var studentLists = []string{"Airell", "nanda", "mailo", "schannel", "marco"}
+	
 	var find = findStudent{studentLists}
+
 	fmt.Println(find("airell"))
 }
 
@@ -20,8 +22,14 @@ func findStudent(students []string) func(string) string {
 
 		for i, v := range students {
 			if strings.ToLower(v) == strings.ToLower(s) {
-				student
+				student = v
+				position = 1
+				break
 			}
 		}
+		if student == "" {
+		return fmt.Sprintf("%s does'nt exist!!!", s)
 	}
+	return fmt.Sprintf("we found %s at position %d", s, position+1)
+}
 }
