@@ -58,4 +58,7 @@ jika pernah belajar bahasa js dan php, maka ini mirip seperti tipe data object p
             - combining slice with map 
 
 => Aliase : merupakan fitur Go yang digunakan sebagai alternatif dari tipe data yang sudah ada
-=> String in depth :
+=> String in depth : string pda bahasa Go terbebtuk dari kumpulan tipe data byte yang di letakkan di dalam slice atau biasa kt sebut dengan slice of bytes, byte merupakan tipe 
+data aliase daro tipe data uint8
+            - looping over string (byte-by-byte)
+            - looping over string (rune-by-rune)
