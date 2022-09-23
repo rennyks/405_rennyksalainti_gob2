@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-func main()  {
+func main ()  {
 	//varadic funvtion #1
 	studentLists := print ("ariel", "nand", "mailo", "schannel", "marco")
 	fmt.Printf("%v", studentLists)
 }
 
-func  print(names ...string) []map[string]string {
+func  print (names ...string) []map[string]string {
 	var result []map[string]string
 
 	for i, v := range names{

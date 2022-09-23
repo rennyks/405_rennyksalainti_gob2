@@ -6,7 +6,7 @@ import (
 )
 
 func main()  {
-	//mengembalikan sebuah nilai
+	//mengembalika/me-return sebuah nilai
 	var names = []string{"renny", "jordan"}
 	var printMsg = greet("heii", names)
 
