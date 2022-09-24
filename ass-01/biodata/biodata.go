@@ -34,7 +34,7 @@ func main(){
 	//fun biodata yang memiliki parameter arr dengan tipe datanya integer 
 	func biodata(arr int) 	{
 	var datapeserta = []Students{
-		//datapeserta 
+		//datapeserta yang nanti ditampilkan sesuai urutan
 		{nama: "renny", alamat: "manado", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
 		{nama: "rendy", alamat: "bandung", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
 		{nama: "renata", alamat: "jakarta", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
