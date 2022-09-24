@@ -4,12 +4,11 @@ package main
 import (
 	"fmt"     //untuk menampilkan teks pda saat melakukan output
 	"os"      // os tersimpan dalam bentuk array dengan pemisahnya adalah spasi
-	"strconv" //untuk melakukan konvers
+	"strconv" //untuk melakukan konversi
 )
 
 //inialisasi struct Students
 type Students struct {
-	nomer	string
 	nama 	string
 	alamat 	string
 	pekerjaan 	string
@@ -24,25 +23,27 @@ func main(){
 	var args = argsRaw[1] //pda data arrgsRaw dimasukan array 1 ke args
 
 	num, err := strconv.Atoi(args) //strconv.Atoi() untuk konversi data string ke int
-	_ = err //untuk menampung nil
+	_ = err //untuk menampung nilai kosong
 
 
-	//fmt.Println(args) //=> untuk mengetahui argument datanya 
+	fmt.Println(args) //=> untuk mengetahui argument datanya 
 
 	biodata(num) //untuk memanggil func biodata dengan parameter num
 }	
 
-	//fun biodata yang memili parameter arr dengan tipe datanya integer 
+	//fun biodata yang memiliki parameter arr dengan tipe datanya integer 
 	func biodata(arr int) 	{
 	var datapeserta = []Students{
-		{nomer: "01", nama: "renny", alamat: "manado", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
-		{nomer: "02", nama: "rendy", alamat: "bandung", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
-		{nomer: "03", nama: "renata", alamat: "jakarta", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
-		{nomer: "04", nama: "relin", alamat: "purwokerto", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru "},
-		{nomer: "05", nama: "ryan", alamat: "bali", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
-		{nomer: "06", nama: "yuni", alamat: "semarang", pekerjaan: "mahasiswa", alasan: "mempelaj hal baru"},
+		//datapeserta 
+		{nama: "renny", alamat: "manado", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
+		{nama: "rendy", alamat: "bandung", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
+		{nama: "renata", alamat: "jakarta", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
+		{nama: "relin", alamat: "purwokerto", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru "},
+		{nama: "ryan", alamat: "bali", pekerjaan: "mahasiswa", alasan: "mempelajari hal baru"},
+		{nama: "yuni", alamat: "semarang", pekerjaan: "mahasiswa", alasan: "mempelaj hal baru"},
 	}
 	//untuk menampilkan data nama, alamat, pekerjaan dan alasan yang disimpan dalam variabel datapeserta
+	//%s digunakan untuk memformat data string.
 	fmt.Printf(" Nama : %s\n Alamat : %s\n Pekerjaan : %s\n Berikan Alasan : %s\n",
 	
 	//datapesert = nama variabelnya, [arr-1] karena nanti inputan dimulai dari angka/no absen 1
