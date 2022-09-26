@@ -5,7 +5,7 @@ import (
 	"runtime"
 )
 
-func mainO() {
+func main() {
 fmt.Println("main execultion started")
 
 go firstPtocess(8)
@@ -15,7 +15,7 @@ fmt.Println("no. of Goroutine:", runtime.NumGoroutine())
 fmt.Println("main execution ended")
 }
 
-func firstPtocess(index int){
+func firstPtocess(index int) {
 	fmt.Println("first process func started")
 	for i := 1; i <= index; i++ {
 	fmt.Println("i=", i)
@@ -29,5 +29,4 @@ func secondProcess(index int) {
 		fmt.Println("j=", j)
 	}
 	fmt.Println("second process func ended")
-	
 }

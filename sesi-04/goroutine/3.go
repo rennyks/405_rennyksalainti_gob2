@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func mainO() {
+func main() {
 fmt.Println("main execultion started")
 
 go firstPtocess(8)
