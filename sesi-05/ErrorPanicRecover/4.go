@@ -22,7 +22,7 @@ func main() {
 func catchErr() {
 	if r := recover(); r != nil {
 		fmt.Println("error occured:", r)
-	}else{
+	}else {
 		fmt.Println("application running oerfectly")
 	}	
 }
