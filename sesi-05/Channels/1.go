@@ -5,9 +5,11 @@ import "fmt"
 func main() {
 
 	c := make(chan string)
-
+//step 1
 go introduce("Airell", c)
+//step 2
 go introduce("Nanda", c)
+//step 3
 go introduce("Mailo", c)
 
 msg := <-c

@@ -17,7 +17,7 @@ func main() {
 
 	go func ()  {
 		time.Sleep(1 * time.Second)
-		c2 <- "ssalut!"
+		c2 <- "salut!"
 	}()
 
 	for i := 1; i <= 2; i++ {

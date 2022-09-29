@@ -11,9 +11,9 @@ c1 := make(chan int, 3)
 
 go func (c chan int)  {
 	for i := 1; i <= 5; i++ {
-	fmt.Println("func groutine starts sending data into the channel")
+	fmt.Printf("func groutine #%d starts sending data into the channel\n", i)
 	c <- i
-	fmt.Println("func groutine starts sending data into the channel")	
+	fmt.Printf("func groutine #%d after sending data into the channel", i)	
 	}
 
 	close(c)
