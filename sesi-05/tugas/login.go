@@ -8,21 +8,22 @@ import (
 )
 
 func main() {
-	
-	defer catchErr()
 
-	
+	//username dengan tipe data string
 	var username string
-	//var password len
 
+	//untuk input username
 	fmt.Println("Username:")
 	fmt.Scanln(&username)
 	
+	//untuk input password
 	fmt.Println("Password:")
+	paswd, _ := gopass.GetPasswdMasked()
 
-	password, _ := gopass.GetPasswdMasked()
 
-	if valid, err := validateLogin(username, password); err != nil {
+	
+	//melakukan validasi pada username dan password
+	if valid, err := validateLogin(username, paswd); err != nil {
 		panic(err.Error())
 	} else {
 		fmt.Println(valid)
@@ -30,21 +31,13 @@ func main() {
 
 }
 
-func catchErr() {
-	if r := recover(); r != nil {
-		fmt.Println("error occured:", r)
-	}else {
-		fmt.Println("username & password correct!")
-	}	
-}
 
-
-func validateLogin(username string,password []byte) (string, error) {
-	pl := string(password)
-	if username != "reni" && pl != "0987re" {
+//fungction validateLogin mengatur username & paswd
+func validateLogin(username string, password []byte) (string, error) {
+	ps := string(password[:])
+	if username != "reni" && ps != "0987re" {
 	return "", errors.New("is wrong!")
 		
 	}
-
 	return "login!", nil
 }
