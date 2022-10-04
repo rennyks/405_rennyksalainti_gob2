@@ -1,7 +1,11 @@
 package models
 
 import (
+	"errors"
+	"fmt"
 	"time"
+
+	"gorm.io/gorm"
 )
 
 type Product struct {
@@ -12,3 +16,13 @@ type Product struct {
 	CreatedAt time.Time
 	UpdateAt  time.Time
 }	
+
+func (p *Product) BeforeCreate(tx *gorm.DB) (err error) {
+	fmt.Println("product before create()")
+
+	if len(p.Name) < 4 {
+		err = errors.New("product name is too short")
+	}
+
+	return
+}
