@@ -4,7 +4,7 @@ import (
 	"time"
 )
 
-type product struct {
+type Product struct {
 	ID        uint   `gorm:"primaryKey"`
 	Name      string `gorm:"not null;unique;type:varchar(191)"`
 	Brand     string `gorm:"not null;unique;type:varchar(191)"`
