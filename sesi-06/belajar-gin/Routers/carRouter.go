@@ -16,7 +16,7 @@ func StartServer() *gin.Engine {
 	router.GET("/cars/:carID", controllers.GetCar)
 	router.DELETE("/cars/:carID", controllers.DeleteCar)	
 
-	
+	//router API menampilkan semua cars
 	router.GET("/cars", controllers.GetAll)
 	return router
 }

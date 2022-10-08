@@ -67,6 +67,7 @@ func UpdateCar(ctx *gin.Context) {
 	})
 }
 
+//view
 func GetCar(ctx *gin.Context) {
 	carID := ctx.Param("carID")
 	condition := false
@@ -93,6 +94,7 @@ func GetCar(ctx *gin.Context) {
 	})
 }
 
+//delete
 func DeleteCar(ctx *gin.Context) {
 	carID := ctx.Param("carID")
 	condition := false
