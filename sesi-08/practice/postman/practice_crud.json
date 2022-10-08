@@ -1,0 +1,31 @@
+{
+  "info": { "_postman_id": "9a3ded76-bfda-422b-97a8-73f398ffa242", "name": "postman_practice", "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json" },
+  "item": [
+    {
+      "name": "create data",
+      "id": "436a1571-e879-479e-a304-bd815ff30012",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            { "key": "first_name", "value": "indahyani", "type": "text" },
+            { "key": "last_name", "value": "atikasarimadoaa", "type": "text" }
+          ]
+        },
+        "url": "http://localhost:3000/person"
+      },
+      "response": []
+    },
+    { "name": "get all data", "id": "538909c4-b494-4059-87b7-3bf7855fce19", "request": { "method": "GET", "header": [], "url": "http://localhost:3000/persons" }, "response": [] },
+    { "name": "get data by id", "id": "1abd353d-5e5f-4885-8966-065b540e71cf", "request": { "method": "GET", "header": [], "url": "http://localhost:3000/person/10" }, "response": [] },
+    {
+      "name": "update data",
+      "id": "f821f63a-c6f6-447b-94ba-53b88e7a0302",
+      "request": { "method": "PUT", "header": [], "body": { "mode": "raw", "raw": "{\r\n    \"first_name\" : \"rina\"\r\n    \"last_name\" : \"jordan\"\r\n}" }, "url": "http://localhost:3000/person" },
+      "response": []
+    },
+    { "name": "delete data", "id": "b882182e-3d06-49db-b15e-2d44d81c5f22", "request": { "method": "DELETE", "header": [], "url": "http://localhost:3000/person/9" }, "response": [] }
+  ]
+}
